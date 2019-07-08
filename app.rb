@@ -10,18 +10,18 @@ get "/" do
 end
 
 
-#class Contact < ActiveRecord::Base
-#  self.table_name = 'salesforcesandboxfull.contact'
-#end
+class Contact < ActiveRecord::Base
+  self.table_name = 'salesforcesandboxfull.contact'
+end
 
 class Idea < ActiveRecord::Base
   self.table_name = 'salesforcesandboxfull.idea'
 end
 
-#get "/contacts" do
-#  @contacts = Contact.all
-#  erb :index
-#end
+get "/contacts" do
+  @contacts = Contact.all
+  erb :index
+end
 
 get "/ideas" do
   @ideas = Idea.all
