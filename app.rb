@@ -15,7 +15,7 @@ end
 #end
 
 class Idea < ActiveRecord::Base
-  self.table_name = 'salesforce.idea'
+  self.table_name = 'salesforcesandboxfull.idea'
 end
 
 #get "/contacts" do
